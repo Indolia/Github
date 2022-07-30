@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol RootViewModelProtocol: class {
+protocol RootViewModelProtocol: AnyObject {
     func didPush(completion: (() -> Void)?)
     func didPop(completion: (() -> Void)?)
     func didPresent(completion: (() -> Void)?)

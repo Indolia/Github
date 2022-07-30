@@ -6,7 +6,7 @@
 //
 
 import Foundation
-protocol RootBuilderProtocol: class {
+protocol RootBuilderProtocol: AnyObject {
     
 }
 

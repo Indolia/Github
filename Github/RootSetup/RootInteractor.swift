@@ -14,7 +14,7 @@ enum HttpMethod: String {
     case DELETE
 }
 
-protocol RootInteractorProtocol: class {
+protocol RootInteractorProtocol: AnyObject {
     func request(with param: [String : Any]?,for url: URL, method type: HttpMethod, handler:@escaping(Result<Data,NSError>)->Void)
 }
 

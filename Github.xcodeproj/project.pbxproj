@@ -15,6 +15,12 @@
 		5F1078BF2895449C009C0F06 /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1078BE2895449C009C0F06 /* RootInteractor.swift */; };
 		5F1078C1289544DF009C0F06 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1078C0289544DF009C0F06 /* AppConstants.swift */; };
 		5F1078C32895455D009C0F06 /* UtilityExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1078C22895455D009C0F06 /* UtilityExtension.swift */; };
+		5F1078C528954821009C0F06 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1078C428954821009C0F06 /* WelcomeViewController.swift */; };
+		5F1078C7289550C7009C0F06 /* Indexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1078C6289550C7009C0F06 /* Indexer.swift */; };
+		5F1078C928955133009C0F06 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1078C828955133009C0F06 /* WelcomeViewModel.swift */; };
+		5F1078CB2895515D009C0F06 /* WelcomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1078CA2895515D009C0F06 /* WelcomeBuilder.swift */; };
+		5F1078CD28955185009C0F06 /* WelcomeViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1078CC28955185009C0F06 /* WelcomeViewBuilder.swift */; };
+		5F1078CF2895519F009C0F06 /* WelcomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1078CE2895519F009C0F06 /* WelcomeRouter.swift */; };
 		5F5823B228953CDC00089DB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5823B128953CDC00089DB3 /* AppDelegate.swift */; };
 		5FD9138028952F3900D71223 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD9137E28952F3900D71223 /* Main.storyboard */; };
 		5FD9138228952F3E00D71223 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FD9138128952F3E00D71223 /* Assets.xcassets */; };
@@ -50,6 +56,12 @@
 		5F1078BE2895449C009C0F06 /* RootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
 		5F1078C0289544DF009C0F06 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		5F1078C22895455D009C0F06 /* UtilityExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityExtension.swift; sourceTree = "<group>"; };
+		5F1078C428954821009C0F06 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		5F1078C6289550C7009C0F06 /* Indexer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indexer.swift; sourceTree = "<group>"; };
+		5F1078C828955133009C0F06 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
+		5F1078CA2895515D009C0F06 /* WelcomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeBuilder.swift; sourceTree = "<group>"; };
+		5F1078CC28955185009C0F06 /* WelcomeViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewBuilder.swift; sourceTree = "<group>"; };
+		5F1078CE2895519F009C0F06 /* WelcomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouter.swift; sourceTree = "<group>"; };
 		5F5823B128953CDC00089DB3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FD9137528952F3800D71223 /* Github.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Github.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD9137F28952F3900D71223 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -91,6 +103,11 @@
 		5F1078B328954355009C0F06 /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
+				5F1078C428954821009C0F06 /* WelcomeViewController.swift */,
+				5F1078C828955133009C0F06 /* WelcomeViewModel.swift */,
+				5F1078CA2895515D009C0F06 /* WelcomeBuilder.swift */,
+				5F1078CC28955185009C0F06 /* WelcomeViewBuilder.swift */,
+				5F1078CE2895519F009C0F06 /* WelcomeRouter.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -123,6 +140,7 @@
 		5F5823AE28953CDC00089DB3 /* Indexer */ = {
 			isa = PBXGroup;
 			children = (
+				5F1078C6289550C7009C0F06 /* Indexer.swift */,
 			);
 			path = Indexer;
 			sourceTree = "<group>";
@@ -332,7 +350,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F1078C7289550C7009C0F06 /* Indexer.swift in Sources */,
+				5F1078C928955133009C0F06 /* WelcomeViewModel.swift in Sources */,
 				5F1078B52895439D009C0F06 /* NavigationViewController.swift in Sources */,
+				5F1078CF2895519F009C0F06 /* WelcomeRouter.swift in Sources */,
+				5F1078CD28955185009C0F06 /* WelcomeViewBuilder.swift in Sources */,
+				5F1078CB2895515D009C0F06 /* WelcomeBuilder.swift in Sources */,
+				5F1078C528954821009C0F06 /* WelcomeViewController.swift in Sources */,
 				5F1078B7289543D3009C0F06 /* RootRouter.swift in Sources */,
 				5F1078BF2895449C009C0F06 /* RootInteractor.swift in Sources */,
 				5F1078C1289544DF009C0F06 /* AppConstants.swift in Sources */,
