@@ -9,7 +9,7 @@ import Foundation
 
 struct AppConstants {
     struct UserInfo {
-        static let key:String = "top_headlines_user_info_key"
+        static let key:String = "github_user_account_info_key"
     }
     
     enum Storyboard: String {
@@ -19,7 +19,7 @@ struct AppConstants {
     struct ViewControllerStotyboardId {
         static let navigationViewController = "NavigationViewController"
         static let welcomeViewController = "WelcomeViewController"
-        static let signInOrSignUpViewController  = "SignInOrSignUpViewController"
+        static let loginViewController  = "LoginViewController"
         static let headlinesTableViewController = "HeadlinesTableViewController"
         static let headlineDetailsTableViewController = "HeadlineDetailsTableViewController"
     }
