@@ -38,9 +38,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="220"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-App" translatesAutoresizingMaskIntoConstraints="NO" id="2jt-Sh-zKy">
-                                        <rect key="frame" x="153" y="60" width="76" height="100"/>
+                                        <rect key="frame" x="153" y="53" width="76" height="114"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="s5x-5S-rJS"/>
+                                            <constraint firstAttribute="width" secondItem="2jt-Sh-zKy" secondAttribute="height" multiplier="1:1.5" id="pUb-H9-VjV"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
@@ -48,10 +48,10 @@
                                 <constraints>
                                     <constraint firstItem="t3L-f9-dPg" firstAttribute="top" secondItem="1KE-oz-4Uw" secondAttribute="top" id="AZz-vM-mpI"/>
                                     <constraint firstItem="t3L-f9-dPg" firstAttribute="leading" secondItem="1KE-oz-4Uw" secondAttribute="leading" id="Cmd-ku-c6O"/>
+                                    <constraint firstItem="2jt-Sh-zKy" firstAttribute="centerX" secondItem="1KE-oz-4Uw" secondAttribute="centerX" id="EwC-iP-qZm"/>
                                     <constraint firstAttribute="trailing" secondItem="t3L-f9-dPg" secondAttribute="trailing" id="PLQ-uT-Chv"/>
                                     <constraint firstAttribute="height" constant="220" id="S1u-ty-EDa"/>
-                                    <constraint firstItem="2jt-Sh-zKy" firstAttribute="centerY" secondItem="1KE-oz-4Uw" secondAttribute="centerY" id="h3K-n8-mbR"/>
-                                    <constraint firstItem="2jt-Sh-zKy" firstAttribute="centerX" secondItem="1KE-oz-4Uw" secondAttribute="centerX" id="j3N-fy-Ggq"/>
+                                    <constraint firstItem="2jt-Sh-zKy" firstAttribute="centerY" secondItem="1KE-oz-4Uw" secondAttribute="centerY" id="YCM-Fd-elL"/>
                                     <constraint firstAttribute="bottom" secondItem="t3L-f9-dPg" secondAttribute="bottom" id="kuh-lh-elA"/>
                                 </constraints>
                             </view>
