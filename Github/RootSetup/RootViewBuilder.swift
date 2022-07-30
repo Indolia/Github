@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol RootViewBuilderProtocol: class {
+protocol RootViewBuilderProtocol: AnyObject {
     
 }
 
