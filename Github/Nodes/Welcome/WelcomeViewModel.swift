@@ -43,7 +43,9 @@ extension WelcomeViewModel: WelcomeViewActionDelegate {
     }
     
     private func login() {
-       
+        let dependencies = LoginViewDependencies(nav: viewBuilder.dependencies.nav, storyboard: AppConstants.Storyboard.main)
+        loginRouter = LoginBuilder().build(dependencies: dependencies)
+        loginRouter?.push(completion: nil)
     }
     
     private func home() {
