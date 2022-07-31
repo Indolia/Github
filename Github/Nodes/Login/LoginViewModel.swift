@@ -23,7 +23,7 @@ class LoginViewModel: LoginViewModelProtocol {
     weak var router: LoginRouterProtocol!
     private weak var view: LoginViewProtocol?
     private var homeRouter: RootRouterProtocol?
-    private var userInfo: UserInfoModel? {
+    private var userInfo: GithubInfoModel? {
         willSet{
             newValue?.signUp(completion: { (status) in
                 print(status)
@@ -63,7 +63,7 @@ extension LoginViewModel: LoginViewActionDelegate {
 }
 
 extension LoginViewModel {
-    func validate(repoOwner: String?, and repoName: String?, authToken: String? , completion:(Bool, UserInfoModel )->Void) throws {
+    func validate(repoOwner: String?, and repoName: String?, authToken: String? , completion:(Bool, GithubInfoModel )->Void) throws {
        
         guard let someRepoOwner = repoOwner, !someRepoOwner.isEmpty else {
             throw LoginError.repoOwnerNameShouldNotBeEmpty
@@ -77,7 +77,7 @@ extension LoginViewModel {
             throw LoginError.authTokenShouldNotBeEmpty
         }
        
-        let model = UserInfoModel(repoOwner: someRepoOwner, repoName: someRepoName, authToken: someAuthToken)
+        let model = GithubInfoModel(repoOwner: someRepoOwner, repoName: someRepoName, authToken: someAuthToken)
         completion(true , model)
     }
  

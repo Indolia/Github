@@ -49,6 +49,8 @@ extension WelcomeViewModel: WelcomeViewActionDelegate {
     }
     
     private func home() {
-       
+        let dependencies = HomeViewDependencies(userType: .guest, nav: viewBuilder.dependencies.nav, storyboard: AppConstants.Storyboard.main)
+        homeRouterProtocol  = HomeBuilder().build(dependencies: dependencies)
+        homeRouterProtocol?.push(completion: nil)
     }
 }

@@ -58,11 +58,9 @@ class RootInteractor: RootInteractorProtocol {
                     // make sure this JSON is in the format we expect
                     let json = try JSONSerialization.jsonObject(with: jsonData, options: [])
                     print(json)
-                    if let json = try JSONSerialization.jsonObject(with: jsonData, options: []) as? [String: Any] {
+                    if let array =  json as? [[String: Any]] {
                         // try to read out a string array
-                        if let names = json["names"] as? [String] {
-                            print(names)
-                        }
+                        print(array.first ?? "default value")
                     }
                 } catch let error as NSError {
                     print("Failed to load: \(error.localizedDescription)")

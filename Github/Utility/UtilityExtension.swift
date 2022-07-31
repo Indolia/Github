@@ -182,21 +182,6 @@ public extension UIViewController {
         present(alert, animated: true) {}
     }
     
-    func actionSheet(with title: String?, message: String?, completion: @escaping(Int) -> Void) {
-        let alert  = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
-        alert.addAction(UIAlertAction(title: "Edit Details", style: .default, handler: { (action) in
-            completion(0)
-        }))
-        
-        alert.addAction(UIAlertAction(title: "Delete Employee", style: .destructive, handler: { (action) in
-            completion(1)
-        }))
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action) in
-            completion(2)
-        }))
-        present(alert, animated: true) {}
-    }
-    
     
 }
  

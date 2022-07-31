@@ -20,8 +20,7 @@ struct AppConstants {
         static let navigationViewController = "NavigationViewController"
         static let welcomeViewController = "WelcomeViewController"
         static let loginViewController  = "LoginViewController"
-        static let headlinesTableViewController = "HeadlinesTableViewController"
-        static let headlineDetailsTableViewController = "HeadlineDetailsTableViewController"
+        static let homeViewController = "HomeViewController"
     }
     
     struct ServerURL {
