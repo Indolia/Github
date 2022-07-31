@@ -25,7 +25,7 @@ class WelcomeViewController: UIViewController {
     private var nav: NavigationViewControllerProtocol?
     @IBOutlet var memberButton: UIButton!
     @IBOutlet var guestButton: UIButton!
-    weak var delegate: WelcomeViewActionDelegate?
+    var delegate: WelcomeViewActionDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()

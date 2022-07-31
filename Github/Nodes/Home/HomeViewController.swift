@@ -64,6 +64,7 @@ class HomeViewController: UIViewController {
         let image = UIImage(named: "logout.png")
         let button = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(rightBarButtonTapped(button: )))
         self.navigationItem.rightBarButtonItem = button
+        self.navigationItem.hidesBackButton = true
     }
     
     @objc private func rightBarButtonTapped(button: UIBarButtonItem) {

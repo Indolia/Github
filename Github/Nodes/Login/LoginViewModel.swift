@@ -46,7 +46,9 @@ extension LoginViewModel: RootViewModelProtocol {
 
 extension LoginViewModel: LoginViewActionDelegate {
     func successfullLogedIn() {
-       
+        let dependencies = HomeViewDependencies(userType: .member, nav: viewBuilder.dependencies.nav, storyboard: AppConstants.Storyboard.main)
+        homeRouter  = HomeBuilder().build(dependencies: dependencies)
+        homeRouter?.push(completion: nil)
     }
     
     func validateDetails(with repoOwner: String?, repoName: String?, authToken: String?, completion: (Result<Bool, LoginError>) -> Void) {

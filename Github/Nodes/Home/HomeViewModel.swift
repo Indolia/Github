@@ -96,7 +96,14 @@ extension HomeViewModel {
     
     private func getPullRequest(for paging: Paging) {
         currentPaging = paging
-        let pr = FetchPRsRequest(urlString: AppConstants.ServerURL.baseURL, paging: paging, param: nil, method: .GET)
+        var url = AppConstants.ServerURL.baseURL(for: .alamofire, for: .all)
+        if viewBuilder.dependencies.userType == .guest {
+             url = AppConstants.ServerURL.baseURL(for: .owm, for: .all)
+        }else {
+             url = AppConstants.ServerURL.baseURL(for: .alamofire, for: .all)
+        }
+        
+        let pr = FetchPRsRequest(urlString: url, paging: paging, param: nil, method: .GET)
         if let request = pr {
             getPullRequests(for: request)
         }

@@ -33,7 +33,7 @@ struct PullRequestModel: PullRequestModelProtocal {
     let user: UserInfoModel
     
     var searchable: String {
-        return user.login + " " + (body ?? "") + " " + title
+        return user.login + " " + " " + title
     }
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: PullRequestModelCodingKeys.self)

@@ -85,7 +85,7 @@ extension Date {
         get {
             let dateFormatter = DateFormatter()
             dateFormatter.timeZone = .current
-            dateFormatter.dateFormat = "dd MMM yyyy"
+            dateFormatter.dateFormat = "dd MMM yy"
             let dateStr = dateFormatter.string(from: self)
             return dateStr
         }

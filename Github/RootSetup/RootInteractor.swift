@@ -23,8 +23,7 @@ class RootInteractor: RootInteractorProtocol {
         if let data = encodeRequestParam(param: param) {
             requestWithBody(data: data, for: url, method: type, handler: handler)
         }else {
-            let someULR = URL(string: AppConstants.ServerURL.baseURL)
-            requestWithOutBody(for: someULR!, method: type, handler: handler)
+            requestWithOutBody(for: url, method: type, handler: handler)
         }
     }
     
@@ -57,10 +56,12 @@ class RootInteractor: RootInteractorProtocol {
                 do {
                     // make sure this JSON is in the format we expect
                     let json = try JSONSerialization.jsonObject(with: jsonData, options: [])
-                    print(json)
+                
                     if let array =  json as? [[String: Any]] {
                         // try to read out a string array
+                        print("count for PR =>>>>> \(array.count)")
                         print(array.first ?? "default value")
+                        
                     }
                 } catch let error as NSError {
                     print("Failed to load: \(error.localizedDescription)")
