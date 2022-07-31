@@ -25,7 +25,7 @@ struct AppConstants {
     
     struct ServerURL {
         enum RepoName: String {
-            case owm = "Indolia/Github"
+            case own = "Indolia/Github"
             case alamofire = "Alamofire/Alamofire"
         }
         

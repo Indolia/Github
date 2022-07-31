@@ -41,6 +41,7 @@
 		5F1078F5289624B3009C0F06 /* LogOutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1078F4289624B3009C0F06 /* LogOutManager.swift */; };
 		5F1078F728965D2F009C0F06 /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1078F628965D2F009C0F06 /* UserInfoModel.swift */; };
 		5F5823B228953CDC00089DB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5823B128953CDC00089DB3 /* AppDelegate.swift */; };
+		5FBCAFDE2896F3D1001E5225 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5FBCAFDD2896F3D1001E5225 /* README.md */; };
 		5FD9138028952F3900D71223 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD9137E28952F3900D71223 /* Main.storyboard */; };
 		5FD9138228952F3E00D71223 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FD9138128952F3E00D71223 /* Assets.xcassets */; };
 		5FD9138528952F3E00D71223 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD9138328952F3E00D71223 /* LaunchScreen.storyboard */; };
@@ -101,6 +102,7 @@
 		5F1078F4289624B3009C0F06 /* LogOutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutManager.swift; sourceTree = "<group>"; };
 		5F1078F628965D2F009C0F06 /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
 		5F5823B128953CDC00089DB3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5FBCAFDD2896F3D1001E5225 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		5FD9137528952F3800D71223 /* Github.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Github.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD9137F28952F3900D71223 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5FD9138128952F3E00D71223 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 		5FD9137728952F3900D71223 /* Github */ = {
 			isa = PBXGroup;
 			children = (
+				5FBCAFDD2896F3D1001E5225 /* README.md */,
 				5F5823AB28953C6900089DB3 /* Storyboard */,
 				5F5823AE28953CDC00089DB3 /* Indexer */,
 				5F5823AD28953CDC00089DB3 /* Models */,
@@ -398,6 +401,7 @@
 			files = (
 				5FD9138528952F3E00D71223 /* LaunchScreen.storyboard in Resources */,
 				5FD9138228952F3E00D71223 /* Assets.xcassets in Resources */,
+				5FBCAFDE2896F3D1001E5225 /* README.md in Resources */,
 				5FD9138028952F3900D71223 /* Main.storyboard in Resources */,
 				5F1078F328962302009C0F06 /* PullRequestDetailsTableViewCell.xib in Resources */,
 			);

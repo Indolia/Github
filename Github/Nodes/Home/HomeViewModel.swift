@@ -60,7 +60,6 @@ extension HomeViewModel: HomeViewActionDelegate {
             let nextPaging = Paging(totalItems: paging.totalItems, currentPage: paging.currentPage + 1, totalPages: paging.totalPages, perPageItems: paging.perPageItems)
             getPullRequest(for: nextPaging)
         }else {
-            print("Already all pages fetched")
             self.view?.stopFooterAnimation()
         }
     }
@@ -98,9 +97,7 @@ extension HomeViewModel {
         currentPaging = paging
         var url = AppConstants.ServerURL.baseURL(for: .alamofire, for: .all)
         if viewBuilder.dependencies.userType == .guest {
-             url = AppConstants.ServerURL.baseURL(for: .owm, for: .all)
-        }else {
-             url = AppConstants.ServerURL.baseURL(for: .alamofire, for: .all)
+             url = AppConstants.ServerURL.baseURL(for: .own, for: .all)
         }
         
         let pr = FetchPRsRequest(urlString: url, paging: paging, param: nil, method: .GET)
