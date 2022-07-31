@@ -354,6 +354,52 @@
             </objects>
             <point key="canvasLocation" x="1699" y="194"/>
         </scene>
+        <!--Home View Controller-->
+        <scene sceneID="Itf-am-z4x">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MOo-Ti-1CM" customClass="HomeViewController" customModule="ClassPlus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U15-MM-H4j">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="bBb-W5-vZC">
+                                <rect key="frame" x="0.0" y="44" width="414" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="MOo-Ti-1CM" id="YAE-OJ-olp"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJk-74-RWO">
+                                <rect key="frame" x="0.0" y="95" width="414" height="751"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="MOo-Ti-1CM" id="gw7-VQ-fM7"/>
+                                    <outlet property="delegate" destination="MOo-Ti-1CM" id="pHd-5v-Gmh"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Hem-RH-vHf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bBb-W5-vZC" firstAttribute="trailing" secondItem="Hem-RH-vHf" secondAttribute="trailing" id="32H-hs-bwg"/>
+                            <constraint firstItem="bBb-W5-vZC" firstAttribute="leading" secondItem="Hem-RH-vHf" secondAttribute="leading" id="HmV-cC-h8j"/>
+                            <constraint firstItem="PJk-74-RWO" firstAttribute="leading" secondItem="Hem-RH-vHf" secondAttribute="leading" id="VMr-px-bnh"/>
+                            <constraint firstItem="PJk-74-RWO" firstAttribute="top" secondItem="bBb-W5-vZC" secondAttribute="bottom" id="Y4X-2I-7ka"/>
+                            <constraint firstItem="PJk-74-RWO" firstAttribute="trailing" secondItem="Hem-RH-vHf" secondAttribute="trailing" id="c8h-OM-Inf"/>
+                            <constraint firstItem="Hem-RH-vHf" firstAttribute="bottom" secondItem="PJk-74-RWO" secondAttribute="bottom" constant="16" id="rOq-Ej-1XQ"/>
+                            <constraint firstItem="bBb-W5-vZC" firstAttribute="top" secondItem="Hem-RH-vHf" secondAttribute="top" id="x7e-A1-tuE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wqG-bc-Ozf"/>
+                    <connections>
+                        <outlet property="PRsTableView" destination="PJk-74-RWO" id="jLZ-cR-mZR"/>
+                        <outlet property="searchBar" destination="bBb-W5-vZC" id="85m-bP-sjC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sjg-Mm-qhs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2488" y="194"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Icon-App" width="76" height="76"/>

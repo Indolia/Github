@@ -26,8 +26,20 @@
 		5F1078D628958866009C0F06 /* LoginViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1078D528958866009C0F06 /* LoginViewBuilder.swift */; };
 		5F1078D828958891009C0F06 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1078D728958891009C0F06 /* LoginViewModel.swift */; };
 		5F1078DA289588BC009C0F06 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1078D9289588BC009C0F06 /* LoginRouter.swift */; };
-		5F1078DC28958921009C0F06 /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1078DB28958921009C0F06 /* UserInfoModel.swift */; };
+		5F1078DC28958921009C0F06 /* GithubInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1078DB28958921009C0F06 /* GithubInfoModel.swift */; };
 		5F1078DE289589B0009C0F06 /* IKeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1078DD289589B0009C0F06 /* IKeyChain.swift */; };
+		5F1078E1289593B7009C0F06 /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1078E0289593B7009C0F06 /* HomeBuilder.swift */; };
+		5F1078E3289593E3009C0F06 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1078E2289593E3009C0F06 /* HomeViewModel.swift */; };
+		5F1078E528959427009C0F06 /* HomeViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1078E428959427009C0F06 /* HomeViewBuilder.swift */; };
+		5F1078E728959465009C0F06 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1078E628959465009C0F06 /* HomeViewController.swift */; };
+		5F1078E9289594E5009C0F06 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1078E8289594E5009C0F06 /* HomeRouter.swift */; };
+		5F1078EB28959522009C0F06 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1078EA28959522009C0F06 /* HomeInteractor.swift */; };
+		5F1078ED289595C0009C0F06 /* PRsRequestAndResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1078EC289595C0009C0F06 /* PRsRequestAndResponse.swift */; };
+		5F1078EF28959632009C0F06 /* PullRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1078EE28959632009C0F06 /* PullRequestModel.swift */; };
+		5F1078F228962302009C0F06 /* PullRequestDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1078F028962302009C0F06 /* PullRequestDetailsTableViewCell.swift */; };
+		5F1078F328962302009C0F06 /* PullRequestDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F1078F128962302009C0F06 /* PullRequestDetailsTableViewCell.xib */; };
+		5F1078F5289624B3009C0F06 /* LogOutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1078F4289624B3009C0F06 /* LogOutManager.swift */; };
+		5F1078F728965D2F009C0F06 /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1078F628965D2F009C0F06 /* UserInfoModel.swift */; };
 		5F5823B228953CDC00089DB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5823B128953CDC00089DB3 /* AppDelegate.swift */; };
 		5FD9138028952F3900D71223 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FD9137E28952F3900D71223 /* Main.storyboard */; };
 		5FD9138228952F3E00D71223 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FD9138128952F3E00D71223 /* Assets.xcassets */; };
@@ -74,8 +86,20 @@
 		5F1078D528958866009C0F06 /* LoginViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewBuilder.swift; sourceTree = "<group>"; };
 		5F1078D728958891009C0F06 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		5F1078D9289588BC009C0F06 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
-		5F1078DB28958921009C0F06 /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
+		5F1078DB28958921009C0F06 /* GithubInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubInfoModel.swift; sourceTree = "<group>"; };
 		5F1078DD289589B0009C0F06 /* IKeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IKeyChain.swift; sourceTree = "<group>"; };
+		5F1078E0289593B7009C0F06 /* HomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
+		5F1078E2289593E3009C0F06 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		5F1078E428959427009C0F06 /* HomeViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewBuilder.swift; sourceTree = "<group>"; };
+		5F1078E628959465009C0F06 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5F1078E8289594E5009C0F06 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		5F1078EA28959522009C0F06 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		5F1078EC289595C0009C0F06 /* PRsRequestAndResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRsRequestAndResponse.swift; sourceTree = "<group>"; };
+		5F1078EE28959632009C0F06 /* PullRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestModel.swift; sourceTree = "<group>"; };
+		5F1078F028962302009C0F06 /* PullRequestDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		5F1078F128962302009C0F06 /* PullRequestDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PullRequestDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		5F1078F4289624B3009C0F06 /* LogOutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutManager.swift; sourceTree = "<group>"; };
+		5F1078F628965D2F009C0F06 /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
 		5F5823B128953CDC00089DB3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FD9137528952F3800D71223 /* Github.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Github.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD9137F28952F3900D71223 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -138,6 +162,22 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		5F1078DF289593AC009C0F06 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5F1078E0289593B7009C0F06 /* HomeBuilder.swift */,
+				5F1078E2289593E3009C0F06 /* HomeViewModel.swift */,
+				5F1078E428959427009C0F06 /* HomeViewBuilder.swift */,
+				5F1078E628959465009C0F06 /* HomeViewController.swift */,
+				5F1078E8289594E5009C0F06 /* HomeRouter.swift */,
+				5F1078EA28959522009C0F06 /* HomeInteractor.swift */,
+				5F1078EC289595C0009C0F06 /* PRsRequestAndResponse.swift */,
+				5F1078F028962302009C0F06 /* PullRequestDetailsTableViewCell.swift */,
+				5F1078F128962302009C0F06 /* PullRequestDetailsTableViewCell.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		5F5823AB28953C6900089DB3 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +193,7 @@
 				5F1078C0289544DF009C0F06 /* AppConstants.swift */,
 				5F1078C22895455D009C0F06 /* UtilityExtension.swift */,
 				5F1078DD289589B0009C0F06 /* IKeyChain.swift */,
+				5F1078F4289624B3009C0F06 /* LogOutManager.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -160,7 +201,9 @@
 		5F5823AD28953CDC00089DB3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				5F1078DB28958921009C0F06 /* UserInfoModel.swift */,
+				5F1078DB28958921009C0F06 /* GithubInfoModel.swift */,
+				5F1078EE28959632009C0F06 /* PullRequestModel.swift */,
+				5F1078F628965D2F009C0F06 /* UserInfoModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -176,6 +219,7 @@
 		5F5823AF28953CDC00089DB3 /* Nodes */ = {
 			isa = PBXGroup;
 			children = (
+				5F1078DF289593AC009C0F06 /* Home */,
 				5F1078D0289587E7009C0F06 /* Login */,
 				5F1078B328954355009C0F06 /* Welcome */,
 			);
@@ -355,6 +399,7 @@
 				5FD9138528952F3E00D71223 /* LaunchScreen.storyboard in Resources */,
 				5FD9138228952F3E00D71223 /* Assets.xcassets in Resources */,
 				5FD9138028952F3900D71223 /* Main.storyboard in Resources */,
+				5F1078F328962302009C0F06 /* PullRequestDetailsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +427,8 @@
 				5F1078C7289550C7009C0F06 /* Indexer.swift in Sources */,
 				5F1078C928955133009C0F06 /* WelcomeViewModel.swift in Sources */,
 				5F1078B52895439D009C0F06 /* NavigationViewController.swift in Sources */,
+				5F1078F5289624B3009C0F06 /* LogOutManager.swift in Sources */,
+				5F1078F228962302009C0F06 /* PullRequestDetailsTableViewCell.swift in Sources */,
 				5F1078CF2895519F009C0F06 /* WelcomeRouter.swift in Sources */,
 				5F1078CD28955185009C0F06 /* WelcomeViewBuilder.swift in Sources */,
 				5F1078CB2895515D009C0F06 /* WelcomeBuilder.swift in Sources */,
@@ -390,17 +437,26 @@
 				5F1078BF2895449C009C0F06 /* RootInteractor.swift in Sources */,
 				5F1078C1289544DF009C0F06 /* AppConstants.swift in Sources */,
 				5F1078BB2895443A009C0F06 /* RootViewBuilder.swift in Sources */,
+				5F1078E728959465009C0F06 /* HomeViewController.swift in Sources */,
 				5F5823B228953CDC00089DB3 /* AppDelegate.swift in Sources */,
 				5F1078D2289587F1009C0F06 /* LoginViewController.swift in Sources */,
 				5F1078C32895455D009C0F06 /* UtilityExtension.swift in Sources */,
 				5F1078BD2895446E009C0F06 /* RootViewModel.swift in Sources */,
 				5F1078DE289589B0009C0F06 /* IKeyChain.swift in Sources */,
+				5F1078E528959427009C0F06 /* HomeViewBuilder.swift in Sources */,
+				5F1078EF28959632009C0F06 /* PullRequestModel.swift in Sources */,
 				5F1078B928954415009C0F06 /* RootBuilder.swift in Sources */,
 				5F1078D628958866009C0F06 /* LoginViewBuilder.swift in Sources */,
 				5F1078D828958891009C0F06 /* LoginViewModel.swift in Sources */,
-				5F1078DC28958921009C0F06 /* UserInfoModel.swift in Sources */,
+				5F1078E3289593E3009C0F06 /* HomeViewModel.swift in Sources */,
+				5F1078DC28958921009C0F06 /* GithubInfoModel.swift in Sources */,
+				5F1078E1289593B7009C0F06 /* HomeBuilder.swift in Sources */,
 				5F1078DA289588BC009C0F06 /* LoginRouter.swift in Sources */,
+				5F1078E9289594E5009C0F06 /* HomeRouter.swift in Sources */,
 				5F1078D428958840009C0F06 /* LoginBuilder.swift in Sources */,
+				5F1078EB28959522009C0F06 /* HomeInteractor.swift in Sources */,
+				5F1078F728965D2F009C0F06 /* UserInfoModel.swift in Sources */,
+				5F1078ED289595C0009C0F06 /* PRsRequestAndResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

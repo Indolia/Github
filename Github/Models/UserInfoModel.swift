@@ -1,52 +1,49 @@
 //
-//  UserInfoModel.swift
+//  UserInfo.swift
 //  Github
 //
-//  Created by Rishi Indolia on 30/07/22.
+//  Created by Rishi Indolia on 31/07/22.
 //
 
 import Foundation
 
-struct UserInfoModel {
-    let repoOwner: String
-    let repoName: String
-    let authToken: String
+
+protocol UserInfoModelProtocal: Decodable {
+    var id: Int { get }
+    var login: String {get}
+    var nodeId: String { get }
+    var avatarURL: String { get }
+    var profileURL: String { get }
+    var userType: String { get }
 }
 
-//MARK: - sign in logic
-extension UserInfoModel {
-    func signIn(completion:(Any?)->Void) {
-        let userData =  IKeyChain.shared.load(key: AppConstants.UserInfo.key)
-        if let someUserData = userData {
-            let userInfo = someUserData.unarchivedObject()
-            completion(userInfo)
-        }else {
-            completion(nil)
-        }
+struct UserInfoModel: UserInfoModelProtocal {
+    
+    let id: Int
+    let login: String
+    let nodeId: String
+    let avatarURL: String
+    let profileURL: String
+    let userType: String
+    
+   
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: UserInfoModelCodingKeys.self)
+        id = try container.decode(Int.self, forKey: .id)
+        login = try container.decode(String.self, forKey: .login)
+        nodeId = try container.decode(String.self, forKey: .nodeId)
+        avatarURL = try container.decode(String.self, forKey: .avatarURL)
+        profileURL = try container.decode(String.self, forKey: .profileURL)
+        userType = try container.decode(String.self, forKey: .userType)
     }
 }
 
-//MARK: - sign up logic
-
-extension UserInfoModel {
-    func signUp(completion:(Bool)->Void) {
-        let userInfo = self.json()
-        print(userInfo)
-        let userData = Data.archivedData(from: userInfo)
-        if let someData = userData {
-            let status = IKeyChain.shared.save(key: AppConstants.UserInfo.key, data: someData)
-            if status == noErr {
-               completion(true)
-            }else {
-                completion(false)
-            }
-        }
-    }
-    
-    func json()-> Dictionary<String,String> {
-        let json = ["repoOwner" : self.repoOwner, "remoName" : self.repoName, "authToken" : self.authToken]
-        return json
-    }
-    
+enum UserInfoModelCodingKeys: String, CodingKey {
+    case id = "id"
+    case login = "login"
+    case nodeId = "node_id"
+    case avatarURL =  "avatar_url"
+    case profileURL = "url"
+    case userType = "type"
 }
 
