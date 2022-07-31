@@ -24,6 +24,19 @@ struct AppConstants {
     }
     
     struct ServerURL {
-        static let baseURL = "https://api.github.com/repos/Indolia/Github/pulls?state=all"
+        enum RepoName: String {
+            case own = "Indolia/Github"
+            case alamofire = "Alamofire/Alamofire"
+        }
+        
+        enum PRsState:String {
+            case open, closed, all
+        }
+        
+        static func baseURL(for repo: RepoName, for state:PRsState) -> String {
+            let baseURL = "https://api.github.com/repos/" + repo.rawValue + "/pulls?state=all"  //+ state.rawValue
+            return baseURL
+        }
+
     }
 }

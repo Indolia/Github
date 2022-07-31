@@ -6,21 +6,11 @@
 //
 
 import Foundation
-
 class IKeyChain {
     
     private init(){}
     
-    private static var sharedInstance: IKeyChain?
-    
-    static var shared: IKeyChain {
-        guard let sharedInstance = sharedInstance else {
-            let sharedInstance = IKeyChain()
-            self.sharedInstance = sharedInstance
-            return sharedInstance
-        }
-        return sharedInstance
-    }
+    static let  shared = IKeyChain()
     
     var isLogedIn: Bool {
         if load(key: AppConstants.UserInfo.key) != nil {
@@ -88,5 +78,4 @@ extension Data {
     }
     
 }
-
 

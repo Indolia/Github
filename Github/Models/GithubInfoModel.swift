@@ -47,6 +47,5 @@ extension GithubInfoModel {
         let json = ["repoOwner" : self.repoOwner, "remoName" : self.repoName, "authToken" : self.authToken]
         return json
     }
-    
 }
 

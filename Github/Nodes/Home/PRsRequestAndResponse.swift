@@ -13,7 +13,7 @@ struct FetchPRsRequest {
     let param: [ String : Any]?
     let method: HttpMethod
     init?(urlString: String, paging: Paging, param: [ String : Any]?, method: HttpMethod) {
-        let fullURLStr = urlString + "?page=\(paging.currentPage)"
+        let fullURLStr = urlString //+ "?page=\(paging.currentPage)"
         guard let url = URL(string: fullURLStr) else {
             print("Invalide url")
             return nil
@@ -40,7 +40,7 @@ struct FetchPRsResponse {
         let decoder = JSONDecoder()
         do {
             pullRequests = try decoder.decode([PullRequestModel].self, from: jsonData)
-            paging = Paging(totalItems: 1, currentPage: 1, totalPages: 10, perPageItems: 1)
+            paging = Paging(totalItems: 1, currentPage: 1, totalPages: 0, perPageItems: 0)
             
         } catch (let someError){
             print(someError.localizedDescription)
